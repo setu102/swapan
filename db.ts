@@ -7,39 +7,156 @@ const getFallbackData = (category: string) => {
     return [
       {
         id: '1',
-        name: 'মধুমতি এক্সপ্রেস (৭৫৫)',
-        route: 'রাজবাড়ী - ঢাকা',
-        detailedRoute: 'রাজবাড়ী, পাঁচুরিয়া, আমিরাবাদ, ফরিদপুর, বাখুন্ডা, পুখুরিয়া, তালমা, ভাঙ্গা, ভাঙ্গা জংশন, শিবচর, পদ্মা, মাওয়া, শ্রীনগর, নিমতলা, গেন্ডারিয়া, ঢাকা (কমলাপুর)',
-        departure: '06:00 AM',
-        offDay: 'বৃহস্পতিবার',
+        name: 'Benapole Express (795)',
+        route: 'Benapole - Dhaka',
+        detailedRoute: 'Benapole, Jashore, Khulna, Poradaha, Rajbari, Faridpur, Bhanga, Dhaka',
+        departure: '12:25 PM',
+        offDay: 'নেই',
         type: 'intercity'
       },
       {
         id: '2',
-        name: 'নকশীকাঁথা কমিউটার (২৫)',
-        route: 'রাজবাড়ী - খুলনা',
-        detailedRoute: 'রাজবাড়ী, সূর্যনগর, বেলগাছি, কালুখালী, পাংশা, খোকসা, কুমারখালী, কুষ্টিয়া কোর্ট, কুষ্টিয়া, পোড়াদহ জংশন, হালসা, আলমডাঙ্গা, চুয়াডাঙ্গা, দর্শনা, উথলী, আনসারবাড়িয়া, সাফদারপুর, কোটচাঁদপুর, মোবারকগঞ্জ, বারোবাজার, যশোর, নওয়াপাড়া, ফুলতলা, দৌলতপুর, খুলনা',
-        departure: '08:10 AM',
+        name: 'Benapole Express (796)',
+        route: 'Dhaka - Benapole',
+        detailedRoute: 'Dhaka, Bhanga, Faridpur, Rajbari, Poradaha, Khulna, Jashore, Benapole',
+        departure: '11:30 PM',
         offDay: 'নেই',
-        type: 'commuter'
+        type: 'intercity'
       },
       {
         id: '3',
-        name: 'ভাটিয়াপাড়া এক্সপ্রেস (৭৭)',
-        route: 'রাজবাড়ী - ভাটিয়াপাড়া',
-        detailedRoute: 'রাজবাড়ী, পাঁচুরিয়া, আমিরাবাদ, ফরিদপুর, বাখুন্ডা, পুখুরিয়া, তালমা, ভাঙ্গা, পুখুরিয়া, বোয়ালমারী, সহস্রাইল, ভাটিয়াপাড়া ঘাট',
-        departure: '06:30 AM',
+        name: 'Sundarban Express (725)',
+        route: 'Khulna - Dhaka',
+        detailedRoute: 'Khulna, Jashore, Poradaha, Rajbari, Faridpur, Bhanga, Dhaka',
+        departure: '9:45 PM',
         offDay: 'নেই',
-        type: 'mail'
+        type: 'intercity'
       },
       {
         id: '4',
-        name: 'রাজবাড়ী এক্সপ্রেস (১০৫)',
-        route: 'রাজবাড়ী - ভাঙ্গা',
-        detailedRoute: 'রাজবাড়ী, পাঁচুরিয়া, আমিরাবাদ, ফরিদপুর, বাখুন্ডা, পুখুরিয়া, তালমা, ভাঙ্গা',
-        departure: '02:45 PM',
+        name: 'Sundarban Express (726)',
+        route: 'Dhaka - Khulna',
+        detailedRoute: 'Dhaka, Bhanga, Faridpur, Rajbari, Poradaha, Jashore, Khulna',
+        departure: '8:15 AM',
+        offDay: 'নেই',
+        type: 'intercity'
+      },
+      {
+        id: '5',
+        name: 'Madhumati Express (756)',
+        route: 'Rajshahi - Dhaka',
+        detailedRoute: 'Rajshahi, Ishwardi, Poradaha, Rajbari, Faridpur, Bhanga, Dhaka',
+        departure: '6:40 AM',
+        offDay: 'নেই',
+        type: 'intercity'
+      },
+      {
+        id: '6',
+        name: 'Madhumati Express (755)',
+        route: 'Dhaka - Rajshahi',
+        detailedRoute: 'Dhaka, Bhanga, Faridpur, Rajbari, Poradaha, Ishwardi, Rajshahi',
+        departure: '3:00 PM',
+        offDay: 'নেই',
+        type: 'intercity'
+      },
+      {
+        id: '7',
+        name: 'Nakshikantha Express (25)',
+        route: 'Khulna - Dhaka',
+        detailedRoute: 'Khulna, Jashore, Poradaha, Rajbari, Faridpur, Bhanga, Dhaka',
+        departure: '11:00 PM',
         offDay: 'নেই',
         type: 'commuter'
+      },
+      {
+        id: '8',
+        name: 'Nakshikantha Express (26)',
+        route: 'Dhaka - Khulna',
+        detailedRoute: 'Dhaka, Bhanga, Faridpur, Rajbari, Poradaha, Jashore, Khulna',
+        departure: '11:20 AM',
+        offDay: 'নেই',
+        type: 'commuter'
+      },
+      {
+        id: '9',
+        name: 'Bhatiapara Express (1)',
+        route: 'Bhatiapara - Rajbari',
+        detailedRoute: 'Bhatiapara, Sahasrail, Boalmari, Madhukhali, Kalukhali, Rajbari',
+        departure: '1:45 PM',
+        offDay: 'নেই',
+        type: 'commuter'
+      },
+      {
+        id: '10',
+        name: 'Bhatiapara Express (2)',
+        route: 'Rajbari - Bhatiapara',
+        detailedRoute: 'Rajbari, Kalukhali, Madhukhali, Boalmari, Sahasrail, Bhatiapara',
+        departure: '10:18 AM',
+        offDay: 'নেই',
+        type: 'commuter'
+      },
+      {
+        id: '11',
+        name: 'Rajbari Express (1)',
+        route: 'Rajbari - Bhanga',
+        detailedRoute: 'Rajbari, Pachuria, Amirabad, Faridpur, Bakhunda, Pukhuria, Talma, Bhanga',
+        departure: '6:00 AM',
+        offDay: 'নেই',
+        type: 'commuter'
+      },
+      {
+        id: '12',
+        name: 'Rajbari Express (2)',
+        route: 'Bhanga - Rajbari',
+        detailedRoute: 'Bhanga, Talma, Pukhuria, Bakhunda, Faridpur, Amirabad, Pachuria, Rajbari',
+        departure: '8:10 AM',
+        offDay: 'নেই',
+        type: 'commuter'
+      },
+      {
+        id: '13',
+        name: 'Rajbari Express (3)',
+        route: 'Rajbari - Bhanga',
+        detailedRoute: 'Rajbari, Pachuria, Amirabad, Faridpur, Bakhunda, Pukhuria, Talma, Bhanga',
+        departure: '5:00 PM',
+        offDay: 'নেই',
+        type: 'commuter'
+      },
+      {
+        id: '14',
+        name: 'Rajbari Shuttle (506)',
+        route: 'Goalanda - Poradaha',
+        detailedRoute: 'Goalanda, Rajbari, Kalukhali, Pangsha, Khoksa, Kumarkhali, Kushtia, Poradaha',
+        departure: '7:30 AM',
+        offDay: 'নেই',
+        type: 'shuttle'
+      },
+      {
+        id: '15',
+        name: 'Rajbari Shuttle (505)',
+        route: 'Poradaha - Goalanda',
+        detailedRoute: 'Poradaha, Kushtia, Kumarkhali, Khoksa, Pangsha, Kalukhali, Rajbari, Goalanda',
+        departure: '11:45 AM',
+        offDay: 'নেই',
+        type: 'shuttle'
+      },
+      {
+        id: '16',
+        name: 'Rajbari Shuttle (508)',
+        route: 'Goalanda - Poradaha',
+        detailedRoute: 'Goalanda, Rajbari, Kalukhali, Pangsha, Khoksa, Kumarkhali, Kushtia, Poradaha',
+        departure: '5:00 PM',
+        offDay: 'নেই',
+        type: 'shuttle'
+      },
+      {
+        id: '17',
+        name: 'Rajbari Shuttle (507)',
+        route: 'Poradaha - Goalanda',
+        detailedRoute: 'Poradaha, Kushtia, Kumarkhali, Khoksa, Pangsha, Kalukhali, Rajbari, Goalanda',
+        departure: '8:00 PM',
+        offDay: 'নেই',
+        type: 'shuttle'
       }
     ];
   }
